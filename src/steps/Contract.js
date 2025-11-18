@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { FaFileContract, FaUser, FaBuilding, FaCheckCircle, FaSignature, FaStripe, FaLock } from "react-icons/fa";
+import { FaFileContract, FaUser, FaBuilding, FaCheckCircle, FaSignature} from "react-icons/fa";
 import {FaUserShield} from "react-icons/fa6";
 
 export default function Contract({ dealData }) {

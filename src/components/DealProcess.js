@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {FaCheckCircle, FaCreditCard, FaEdit, FaCog, FaArrowCircleRight} from "react-icons/fa";
-import { IoIosPaper } from "react-icons/io";
-import { MdHandshake } from "react-icons/md";
+import {FaCheckCircle, FaCreditCard, FaEdit, FaArrowCircleRight} from "react-icons/fa";
 
 import Payment from "../steps/Payment";
 import Contract from "../steps/Contract";
@@ -10,7 +8,7 @@ import Transfer from "../steps/Transfer";
 import Receipt from "../steps/Receipt";
 import StepControls from "./StepControls";
 import DealDataEditor from "./DealDataEditorComponent"; // We'll create this component
-import {FaFilePen, FaHand, FaMoneyBillTransfer} from "react-icons/fa6";
+import {FaFilePen} from "react-icons/fa6";
 
 const steps = [
     { label: "Contract", icon: <FaFilePen />, type: "contract" },

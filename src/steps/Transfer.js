@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { MdHandshake } from "react-icons/md";
-import { FaTruck, FaLock, FaCheckCircle, FaStripe } from "react-icons/fa";
+import { FaLock, FaCheckCircle, FaStripe } from "react-icons/fa";
 import {TbTransferIn} from "react-icons/tb";
 
 export default function Transfer({ dealData }) {

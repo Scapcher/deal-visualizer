@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { FaCheckCircle, FaFileAlt, FaDownload, FaCreditCard, FaStripe, FaUser, FaBuilding, FaLock } from "react-icons/fa";
-import {FaUserShield} from "react-icons/fa6";
+import { FaCheckCircle, FaStripe, FaUser, FaBuilding } from "react-icons/fa";
 
 export default function Receipt({ dealData }) {
     return (

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { FaCheckCircle, FaCreditCard, FaFileAlt, FaLock, FaTruck, FaStripe, FaUser, FaBuilding } from "react-icons/fa";
+import { FaCheckCircle, FaLock, FaStripe, FaUser, FaBuilding } from "react-icons/fa";
 
 export default function Payment({ dealData }) {
 
