@@ -218,7 +218,7 @@ export default function DealProcess() {
         setCurrent(0);
         timeRef.current = 0;
         setTimeMs(0);
-        setDealData(generateNewDealData());
+        // setDealData(generateNewDealData());
         setPlayState("playing");
     };
 
@@ -257,20 +257,11 @@ export default function DealProcess() {
 
                 <div className="flex items-center gap-3">
                     {/* Deal Summary Badge */}
-                    <div className="bg-blue-50 px-4 py-2 rounded-xl border border-blue-200">
+                    <button onClick={() => setShowEditor(true)} className="bg-blue-50 px-4 py-2 rounded-xl border border-blue-200">
                         <p className="text-sm font-semibold text-blue-700">{dealData.dealAmount} Deal</p>
                         <p className="text-xs text-blue-500">M&A Transaction</p>
-                    </div>
-
-                    {/* Edit Deal Data Button */}
-                    <button
-                        onClick={() => setShowEditor(true)}
-                        className="p-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl transition flex items-center gap-2"
-                        title="Edit Deal Data"
-                    >
-                        <FaEdit className="text-gray-600" />
-                        <span className="text-sm font-medium">Edit Deal</span>
                     </button>
+
                 </div>
             </div>
 
@@ -295,7 +286,7 @@ export default function DealProcess() {
 
                             <div className="flex items-center justify-center mt-2 h-10 w-24">
                                 <span
-                                    className={`text-xs font-medium text-center leading-tight ${
+                                    className={`text-lg font-medium text-center leading-tight ${
                                         isActive ? "text-green-600" : "text-gray-400"
                                     }`}
                                 >
